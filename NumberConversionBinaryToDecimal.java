@@ -1,5 +1,5 @@
 import java.util.*;
-public class NumberConversion {
+public class NumberConversionBinaryToDecimal {
     public static int BinaryToDecimal(int len, String binary){
         int decimal = 0;
         for(int i=0; i<len; i++){
