@@ -4,17 +4,18 @@ public class selectionSort {
         
         int n = a.length;
         for(int i = 0 ; i < n ; i++){
+            int minInd = i;
             for(int j = i+1 ; j < n ; j++){
-                if(a[i] > a[j]){
-                    int temp = a[i];
-                    a[i] = a[j];
-                    a[j] = temp;
+                if(a[j] < a[minInd]){
+                    minInd = j;
                 }
             }
+            int temp = a[i];
+                a[i] = a[minInd];
+                a[minInd] = temp;
         }
         for( int b : a){
             System.out.print(b + "   ");
         }
     }
-    
 }
