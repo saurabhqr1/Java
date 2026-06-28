@@ -14,7 +14,6 @@ public class BinomialCofficent {
         }
 
     }
-
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
         System.out.println("ENTER THE VALUE OF n :");
@@ -30,9 +29,7 @@ public class BinomialCofficent {
         int value2 = Fact(r);
         int value3 = Fact(n-r);
         int BiCo = value1/(value2*value3) ;
-
         System.out.println("Binomial is: "+ BiCo);
-
     }
     
 }
